@@ -30,14 +30,14 @@ public class UserServiceApplication {
                     .build();
             System.out.println(authenticationService.register(admin));
 
-            var doctor = RegisterRequest.builder()
+            var user = RegisterRequest.builder()
                     .firstName("User")
                     .lastName("User")
                     .email("user@mail.com")
                     .password("password2")
                     .role(USER)
                     .build();
-            System.out.println(authenticationService.register(doctor));
+            System.out.println(authenticationService.register(user));
         };
     }
 }
